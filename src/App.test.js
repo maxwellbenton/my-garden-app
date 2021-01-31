@@ -1,5 +1,11 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import App from './components/App';
+
+test('renders app name', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/My Garden App/i);
+  expect(linkElement).toBeInTheDocument();
+});
 
 test('renders learn react link', () => {
   render(<App />);

@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+input {
+  border: inherit;
+  background: inherit;
+}
+*:focus {
+  outline: none;
+  border-bottom: 1px solid blue;
+}
+
+.addButton {
+  margin: 10px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.plantCardContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 95%;
+  justify-content: space-around;
+  grid-gap: 10px;
+}
+
+header {
+  height: 10vh;
+}
+
+main {
+  height: 90vh;
+  background: #DDD;
+}
+
+.hover {
+  background-color: #EEE;
+}
